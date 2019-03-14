@@ -16,6 +16,13 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  cursor: default;
+}
+h2 {
+  cursor: pointer;
+}
+
 /* TOP CONTAINER */
 #main {
   width: 200vw;
@@ -48,7 +55,7 @@ div.content {
   display: inline-block;
   float: left;
   width: 50%;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease-in-out;
 }
 
 /* SWIPE LEFT ON CLICK */
@@ -79,10 +86,14 @@ a.link {
 
   box-shadow: 0px 0px 10px 0px var(--shadow-color);
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  /* Override transition all property */
+  transition-property: box-shadow, transform;
 }
 
 a.link:hover {
   box-shadow: 0px 0px 10px 0px var(--shadow-color-hover);
+  transform: scale(1.1);
 }
 
 div.box {
@@ -95,6 +106,32 @@ div.box {
 
 div.box h2 {
   margin: 0;
+}
+
+/* PROJECTS */
+#projects {
+  transform: translateX(100vw);
+}
+#projects > .container {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* ARROW LEFT ICON */
+.arrow-left.icon {
+  position: sticky;
+  top: 50vh;
+  width: 1rem;
+  height: 1rem;
+  border-top: solid 0.3rem #000;
+  border-right: solid 0.3rem #000;
+  transform: scale(1) rotate(-135deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-left.icon:hover {
+  cursor: pointer;
+  transform: scale(1.5) rotate(-135deg);
 }
 
 @media (min-width: 40rem) {
