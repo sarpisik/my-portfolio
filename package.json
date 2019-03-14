@@ -23,7 +23,9 @@
     "url": "https://github.com/sarpisik/my-portfolio/issues"
   },
   "homepage": "https://github.com/sarpisik/my-portfolio#readme",
-  "dependencies": {},
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",

@@ -12,7 +12,8 @@ module.exports = merge(common, {
   optimization: { usedExports: true },
   devtool: 'inline-source-map', // map error to source
   devServer: {
-    contentBase: './dist',
+    contentBase: path.join(__dirname, 'src'),
+    watchContentBase: true,
     hot: true
   },
   module: {
