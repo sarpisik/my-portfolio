@@ -13,9 +13,12 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
+body.show-projects {
+  overflow-y: auto;
+}
 h1 {
   cursor: default;
 }
@@ -25,7 +28,7 @@ h2 {
 
 /* TOP CONTAINER */
 #main {
-  width: 200vw;
+  width: 100vw;
 }
 
 #main > div {
@@ -44,6 +47,49 @@ div.header {
 div.header h1 {
   margin: 0;
 }
+/* HEADER & CONTENT */
+div.container {
+  position: relative;
+  width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100vw);
+}
+
+div.header h1,
+div.icon {
+  transition: transform 0.5s ease-in-out;
+}
+
+body.show-projects div.header h1 {
+  transform: translateX(-100%);
+}
+body.show-projects div.icon {
+  transform: translateX(0);
+}
+/* ARROW LEFT ICON */
+.arrow-left {
+  width: 1rem;
+  height: 1rem;
+  border-top: solid 0.3rem #000;
+  border-right: solid 0.3rem #000;
+  transform: scale(1) rotate(-135deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-left:hover {
+  cursor: pointer;
+  transform: scale(1.1) rotate(-135deg);
+}
 
 /* CONTENT */
 div.content {
@@ -52,23 +98,25 @@ div.content {
 
 /* SECTIONS */
 .inline {
-  display: inline-block;
-  float: left;
-  width: 50%;
+  /* display: inline-block;
+  float: left; */
+  width: 100%;
   transition: transform 0.5s ease-in-out;
 }
 
 /* SWIPE LEFT ON CLICK */
-#main.show-projects .inline {
-  transform: translateX(-100vw);
+body.show-projects #intro {
+  transform: translateX(-100%);
 }
 
-div.container {
-  width: var(--container-width);
-  margin-left: auto;
-  margin-right: auto;
+/* INTRO */
+body.show-projects #projects {
+  transform: translateX(0);
 }
 
+#intro {
+  position: fixed;
+}
 div.grid {
   height: calc(100vh - var(--content-padding-top));
 }
@@ -110,28 +158,11 @@ div.box h2 {
 
 /* PROJECTS */
 #projects {
-  transform: translateX(100vw);
+  transform: translateX(100%);
 }
 #projects > .container {
-  min-height: 100vh;
+  min-height: 200vh;
   position: relative;
-}
-
-/* ARROW LEFT ICON */
-.arrow-left.icon {
-  position: sticky;
-  top: 50vh;
-  width: 1rem;
-  height: 1rem;
-  border-top: solid 0.3rem #000;
-  border-right: solid 0.3rem #000;
-  transform: scale(1) rotate(-135deg);
-  transition: transform 0.3s ease-in-out;
-}
-
-.arrow-left.icon:hover {
-  cursor: pointer;
-  transform: scale(1.5) rotate(-135deg);
 }
 
 @media (min-width: 40rem) {

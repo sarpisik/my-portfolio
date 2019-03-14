@@ -21,16 +21,14 @@ if (process.env.NODE_ENV !== 'production') {
 
 const elementSelector = (name, id) =>
   id ? document.getElementById(name) : document.querySelector(name)
-
-const mainContainer = elementSelector('main', 'id')
-const projectsLink = elementSelector('.projects')
+  const projectsLink = elementSelector('.projects')
 const leftArrow = elementSelector('.arrow-left')
 
 projectsLink.addEventListener('click', e => {
   e.preventDefault()
-  mainContainer.classList.add('show-projects')
+  document.body.classList.add('show-projects')
 })
 
 leftArrow.addEventListener('click', () => {
-  mainContainer.classList.remove('show-projects')
+  document.body.classList.remove('show-projects')
 })
