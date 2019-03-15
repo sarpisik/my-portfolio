@@ -19,9 +19,11 @@ if (process.env.NODE_ENV !== 'production') {
   }
 }
 
+// document.body.style.height = window.innerHeight + 'px';
+
 const elementSelector = (name, id) =>
   id ? document.getElementById(name) : document.querySelector(name)
-  const projectsLink = elementSelector('.projects')
+const projectsLink = elementSelector('.projects')
 const leftArrow = elementSelector('.arrow-left')
 
 projectsLink.addEventListener('click', e => {
