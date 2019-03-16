@@ -13,10 +13,15 @@ module.exports = {
         }
       },
       {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        use: [{ loader: 'file-loader', options: { outputPath: 'fonts/' } }]
+      },
+      {
         test: /\.(png|svg|jpg|jpeg|gif)$/,
         use: [
           {
-            loader: 'file-loader'
+            loader: 'file-loader',
+            options: { outputPath: 'images/' }
           }
         ]
       }

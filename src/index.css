@@ -2,27 +2,46 @@
   outline: 1px solid red;
 } */
 
+/* ubuntu-regular - latin-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/ubuntu-v13-latin-ext-regular.eot'); /* IE9 Compat Modes */
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
+    url('../assets/fonts/ubuntu-v13-latin-ext-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../assets/fonts/ubuntu-v13-latin-ext-regular.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('../assets/fonts/ubuntu-v13-latin-ext-regular.woff') format('woff'),
+    /* Modern Browsers */
+      url('../assets/fonts/ubuntu-v13-latin-ext-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+      url('../assets/fonts/ubuntu-v13-latin-ext-regular.svg#Ubuntu')
+      format('svg'); /* Legacy iOS */
+}
+
+div.header,
+section.inline {
+  width: 100%;
+}
+
 body {
+  font-family: 'Ubuntu';
   overflow: hidden;
 }
 
 body.show-projects {
   overflow-y: auto;
 }
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   cursor: default;
-}
-h2 {
-  cursor: pointer;
-}
-
-/* TOP CONTAINER */
-#main {
-  width: 100vw;
-}
-
-#main > div {
-  width: 100%;
 }
 
 /* HEADER */
@@ -89,9 +108,6 @@ div.content {
 
 /* SECTIONS */
 .inline {
-  /* display: inline-block;
-  float: left; */
-  width: 100%;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -119,7 +135,7 @@ div.grid {
   justify-content: center;
 }
 
-a.link {
+.link {
   margin: 2rem;
   color: inherit;
 
@@ -130,16 +146,16 @@ a.link {
   transition-property: box-shadow, transform;
 }
 
-a.link:hover {
+.link:hover {
   box-shadow: 0px 0px 10px 0px #61dafb;
   transform: scale(1.1);
 }
 
 div.box {
   /* background-color: #f5f5f5; */
-
-  height: 200px;
-  width: 200px;
+  padding: 0 1rem;
+  height: 6rem;
+  width: 6rem;
   text-align: center;
 }
 
@@ -161,14 +177,21 @@ article.project {
   padding-bottom: 2rem;
 }
 
-div.project-container {
+article.project h3 {
+  margin-left: 1rem; /* Equals to left arrow icon width */
+}
+
+.flexbox {
   text-align: center;
 }
-div.block {
+
+.flexbox-column {
   display: inline-block;
+}
+div.block {
   max-height: 31.25rem;
   max-width: 18.75rem;
-  padding-left: 1rem;
+  padding-left: 1rem; /* Equals to left arrow icon width */
   padding-right: 1rem;
   margin-top: 2rem;
   box-shadow: 0 5px 20px -5px #000;
@@ -184,9 +207,16 @@ div.img {
   text-align: left;
 }
 
-@media (min-width: 31.25rem) {
+@media (min-width: 30rem) {
   .flex {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  div.box {
+    height: 12rem;
+    width: 12rem;
   }
 }
 

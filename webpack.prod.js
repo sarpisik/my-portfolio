@@ -25,7 +25,7 @@ module.exports = merge(common, {
       }),
       new OptimizeCSSAssetsPlugin({})
     ],
-    runtimeChunk: 'single', // caused css hashname not working
+    runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {
         vendor: {
