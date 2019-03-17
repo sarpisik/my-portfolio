@@ -16,12 +16,31 @@ module.exports = merge(common, {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist')
   },
+  module: {
+    rules: [
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              minimize: true
+            }
+          }
+        ]
+      },
+      {
+        test: /.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+      }
+    ]
+  },
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
         cache: true,
         parallel: true,
-        sourceMap: true // set to true if you want JS source maps
+        sourceMap: true
       }),
       new OptimizeCSSAssetsPlugin({})
     ],
@@ -53,25 +72,5 @@ module.exports = merge(common, {
       clientsClaim: true,
       skipWaiting: true
     })
-  ],
-  module: {
-    rules: [
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader',
-            options: {
-              minimize: true
-            }
-          }
-        ]
-      },
-      {
-        test: /.css$/,
-        // exclude: /node_modules/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
-      }
-    ]
-  }
+  ]
 })
