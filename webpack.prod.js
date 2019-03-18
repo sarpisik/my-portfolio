@@ -9,6 +9,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const autoprefixer = require('autoprefixer')
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 
 module.exports = merge(common, {
   mode: 'production',
@@ -71,6 +72,17 @@ module.exports = merge(common, {
       // and not allow any straggling "old" SWs to hang around
       clientsClaim: true,
       skipWaiting: true
-    })
+    }),
+    new HtmlWebpackPartialsPlugin([
+      {
+        // Merge analytics html into index.html
+        path: path.join(__dirname, './src/partials/analytics.html'),
+        location: 'head',
+        priority: 'high',
+        options: {
+          ga_property_id: 'UA-136431806-1'
+        }
+      }
+    ])
   ]
 })

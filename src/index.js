@@ -2,6 +2,8 @@ import { onNavigate } from './EventHandlers'
 import 'normalize.css'
 import './index.css'
 
+console.log(process.env.ANALYTICS_CREDENTIALS)
+
 if (process.env.NODE_ENV !== 'production') {
   console.log('Looks like we are in development mode!')
 }
@@ -40,4 +42,6 @@ const portfolioLink = elementSelector('.projects')
 // Left arrow navigator on nav bar in portfolio section
 const leftArrow = elementSelector('.arrow-left')
 
-onNavigate({ right: portfolioLink, left: leftArrow })
+window.addEventListener('load', () =>
+  onNavigate({ right: portfolioLink, left: leftArrow })
+)
