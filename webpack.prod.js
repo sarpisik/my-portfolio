@@ -21,6 +21,7 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.html$/,
+        include: '/src',
         use: [
           {
             loader: 'html-loader',
@@ -32,6 +33,7 @@ module.exports = merge(common, {
       },
       {
         test: /.css$/,
+        exclude: '/assets/projects',
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
       }
     ]

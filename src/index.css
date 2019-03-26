@@ -45,6 +45,23 @@ div.intro-loader::after {
       format('svg'); /* Legacy iOS */
 }
 
+body {
+  font-family: 'Ubuntu';
+  overflow: hidden;
+}
+
+body.show-projects {
+  overflow-y: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  cursor: default;
+}
+
 noscript p {
   position: fixed;
   z-index: 999;
@@ -62,23 +79,6 @@ noscript p {
 div.header,
 section.inline {
   width: 100%;
-}
-
-body {
-  font-family: 'Ubuntu';
-  overflow: hidden;
-}
-
-body.show-projects {
-  overflow-y: auto;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  cursor: default;
 }
 
 /* HEADER */
@@ -232,6 +232,7 @@ article.project h3 {
 
 .flexbox-column {
   display: inline-block;
+  vertical-align: top;
 }
 div.block {
   max-height: 31.25rem;
@@ -243,13 +244,23 @@ div.block {
 }
 
 div.img {
-  height: 222px;
+  height: 14rem;
   border-radius: 0.5rem;
   background-color: green;
 }
 
+div.img.nasa {
+  background: url(../assets/images/nasa.jpg) center center no-repeat;
+  background-size: cover;
+}
 .text-left {
   text-align: left;
+}
+
+@media (min-width: 20rem) {
+  div.img {
+    width: 18.75rem;
+  }
 }
 
 @media (min-width: 30rem) {
@@ -266,7 +277,7 @@ div.img {
   }
 }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 52rem) {
   div.block {
     margin: 2rem 1.5% 0 1.5%;
   }
