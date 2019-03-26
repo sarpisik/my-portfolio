@@ -257,15 +257,12 @@ div.img.nasa {
   text-align: left;
 }
 
-@media (min-width: 20rem) {
-  div.img {
-    width: 18.75rem;
-  }
-}
-
 @media (min-width: 30rem) {
   .link {
     margin: 2rem;
+  }
+  div.img {
+    width: 18.75rem;
   }
 }
 
