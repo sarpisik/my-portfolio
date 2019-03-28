@@ -21,7 +21,7 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.html$/,
-        include: '/src',
+        exclude: '/assets/projects',
         use: [
           {
             loader: 'html-loader',

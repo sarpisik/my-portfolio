@@ -44,6 +44,9 @@ module.exports = {
       description: 'Junior Frontend Developer Portfolio',
       background_color: '#ffffff'
     }),
-    new CopyPlugin([{ from: './assets/projects/nasa', to: 'nasa/' }])
+    new CopyPlugin([
+      { from: './assets/projects/nasa', to: 'nasa/' },
+      { from: './assets/projects/soccer-club', to: 'soccer-club/' }
+    ])
   ]
 }

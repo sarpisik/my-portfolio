@@ -243,16 +243,12 @@ div.block {
   box-shadow: 0 5px 20px -5px #000;
 }
 
-div.img {
-  height: 14rem;
+img {
+  max-width: 100%;
   border-radius: 0.5rem;
   background-color: green;
 }
 
-div.img.nasa {
-  background: url(../assets/images/nasa.jpg) center center no-repeat;
-  background-size: cover;
-}
 .text-left {
   text-align: left;
 }
