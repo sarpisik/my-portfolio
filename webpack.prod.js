@@ -10,6 +10,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const autoprefixer = require('autoprefixer')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
+const WebpackPwaManifest = require('webpack-pwa-manifest')
 
 module.exports = merge(common, {
   mode: 'production',
@@ -66,7 +67,6 @@ module.exports = merge(common, {
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
-      // chunkFilename: '[id].css'
     }),
     new webpack.HashedModuleIdsPlugin(),
     new WorkboxPlugin.GenerateSW({
@@ -74,6 +74,14 @@ module.exports = merge(common, {
       // and not allow any straggling "old" SWs to hang around
       clientsClaim: true,
       skipWaiting: true
+    }),
+    new WebpackPwaManifest({
+      name: 'Sarp IŞIK Portfolio',
+      short_name: 'Portfolio',
+      description: 'Junior Frontend Developer Portfolio',
+      background_color: '#ffffff',
+      theme_color: '#000',
+      start_url: '/'
     }),
     new HtmlWebpackPartialsPlugin([
       {

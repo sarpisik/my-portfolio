@@ -202,8 +202,8 @@ div.box {
   /* background-color: #f5f5f5; */
   display: table;
   padding: 0 1rem;
-  height: 6rem;
-  width: 6rem;
+  min-height: 6rem;
+  min-width: 6rem;
   text-align: center;
 }
 
