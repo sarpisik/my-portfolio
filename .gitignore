@@ -4,5 +4,8 @@
 # production
 /dist
 
+# production
+/assets/projects
+
 # credentials
 .env
