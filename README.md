@@ -1,6 +1,6 @@
 # Sarp IŞIK Jr. Frontend Developer Portfolio [![Build Status](https://travis-ci.org/sarpisik/my-portfolio.svg?branch=master)](https://travis-ci.org/sarpisik/my-portfolio)
 
-This is my personal [portfolio](https://www.sarpisik.com/) app built on vanilla CSS & JavaScript.
+Greetings! My name is Sarp IŞIK. This is my personal [portfolio](https://www.sarpisik.com/) app built on vanilla CSS & JavaScript.
 For more about me, please visit my [github page](https://sarpisik.github.io/).
 
 ## Projects
