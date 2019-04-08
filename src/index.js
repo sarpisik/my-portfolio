@@ -31,7 +31,7 @@ window.addEventListener('load', () => {
   // Portfolio box in intro
   const portfolioLink = document.querySelector('.projects')
 
-  // Left arrow navigator on nav bar in portfolio section
+  // Left arrow navigator on nav bar in portfolio section.
   const leftArrow = document.querySelector('.arrow-left')
 
   // Click event on links
