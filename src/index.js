@@ -6,7 +6,7 @@ if (process.env.NODE_ENV !== 'production') {
   console.log('Looks like we are in development mode!')
 }
 
-// Registering Our Service Worker.
+// Registering Our Service Worker
 window.addEventListener('load', () => {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
@@ -28,10 +28,10 @@ window.addEventListener('load', () => {
       'Looks like you are visiting my portfolio web app offline. Feel free to take a look and please visit back when you are online also, to catch some updates. Thanks!'
     )
 
-  // Portfolio box in intro.
+  // Portfolio box in intro
   const portfolioLink = document.querySelector('.projects')
 
-  // Left arrow navigator on nav bar in portfolio section.
+  // Left arrow navigator on nav bar in portfolio section
   const leftArrow = document.querySelector('.arrow-left')
 
   // Click event on links
