@@ -6,7 +6,7 @@ if (process.env.NODE_ENV !== 'production') {
   console.log('Looks like we are in development mode!')
 }
 
-// Registering Our Service Worker
+// Registering Our Service Worker.
 window.addEventListener('load', () => {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
