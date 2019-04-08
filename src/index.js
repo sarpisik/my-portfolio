@@ -28,7 +28,7 @@ window.addEventListener('load', () => {
       'Looks like you are visiting my portfolio web app offline. Feel free to take a look and please visit back when you are online also, to catch some updates. Thanks!'
     )
 
-  // Portfolio box in intro
+  // Portfolio box in intro.
   const portfolioLink = document.querySelector('.projects')
 
   // Left arrow navigator on nav bar in portfolio section.
