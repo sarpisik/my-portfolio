@@ -1,6 +1,13 @@
 // import { onNavigate } from './EventHandlers';
 // import 'normalize.css'
+// Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
+// Icons
+import '@fortawesome/fontawesome-free/js/fontawesome';
+import '@fortawesome/fontawesome-free/js/solid';
+import '@fortawesome/fontawesome-free/js/regular';
+import '@fortawesome/fontawesome-free/js/brands';
+// Custom css
 import './index.css';
 
 if (process.env.NODE_ENV !== 'production') {

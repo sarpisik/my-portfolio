@@ -39,6 +39,7 @@
     "@babel/core": "^7.3.4",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.3.4",
+    "@fortawesome/fontawesome-free": "^5.8.2",
     "autoprefixer": "^9.4.10",
     "babel-loader": "^8.0.5",
     "clean-webpack-plugin": "^2.0.0",
