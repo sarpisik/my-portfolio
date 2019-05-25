@@ -1,4 +1,4 @@
-import { onNavigate } from './EventHandlers';
+// import { onNavigate } from './EventHandlers';
 // import 'normalize.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
@@ -36,12 +36,12 @@ window.addEventListener('load', () => {
   const leftArrow = document.querySelector('.arrow-left');
 
   // Click event on links
-  onNavigate({ right: portfolioLink, left: leftArrow });
+  // onNavigate({ right: portfolioLink, left: leftArrow });
 
   const loading = document.querySelector('.intro-loader');
-  const main = document.getElementById('main');
+  const body = document.body;
   setTimeout(() => {
     loading.parentNode.removeChild(loading);
-    main.style = 'opacity: 1';
-  }, 1000);
+    body.style = 'opacity: 1';
+  }, 100);
 });
