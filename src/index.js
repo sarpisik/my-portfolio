@@ -1,6 +1,6 @@
 import { onNavigate } from './EventHandlers';
 // import 'normalize.css'
-import './bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 if (process.env.NODE_ENV !== 'production') {
