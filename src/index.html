@@ -43,7 +43,7 @@
     <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#000000" />
   </head>
-  <body>
+  <body class="container">
     <noscript>
       <p>You need to enable JavaScript to run this app.</p>
     </noscript>
@@ -51,40 +51,294 @@
       class="intro-loader"
       style="position:fixed; top:0; left:0; height:100%; width:100%; z-index:999; background-color:#fff; "
     ></div>
-    <header class="container-fluid">
 
+    <!-- Photo & Logo -->
+    <header class="container-fluid my-5">
       <div class="row justify-content-center">
         <div class="col-sm-4">
-          <img
-              src="../assets/images/sarp_isik.jpg"
-              class="d-block mx-auto rounded-circle photo"
+          <div class="photo-container">
+            <img
+              src="../assets/images/sarp_isik_light_logo.png"
+              class="d-block mx-auto photo bg-dark"
               alt="sarp_isik"
             />
+          </div>
         </div>
       </div>
     </header>
-    <main class="container-fluid">
-      <div class="row justify-content-center text-center">
-        <div class="col-sm-12">
-          <h1>Sarp IŞIK</h1>
-          <h3>Jr. Fullstack Developer</h3>
-          <h2>Hello!</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque debitis totam voluptate consectetur quos animi laborum laudantium molestias ducimus harum officia fugit ipsam sequi quod eveniet, ullam velit sint at!</p>
+
+    <div class="content t-white container-fluid">
+      <!-- Content -->
+      <main class="row">
+        <!-- About me -->
+        <section class="col-sm-12 px-0 text-center">
+          <h1 class="mt-3 font-weight-bold">Sarp IŞIK</h1>
+            <h6 class="mt-3 t-white font-weight-bold f-t-d-text-color">Jr. FULL STACK DEVELOPER</h6>
+            <h2 class="mt-3 font-weight-bold text-color">Hello!</h2>
+            <p class="mt-3 col text-color">
+              Welcome to my portfolio. For more info, please use the below buttons.
+            </p>
+        </section>
+
+        <!-- Projects -->
+        <section class="col-sm-12 text-center">
+
+          <!-- Vanilla Projects -->
+          <div class="row justify-content-center project-vanilla">
+            <div class="col-sm-12"><h2>Vanilla CSS3 & ES6</h2></div>
+
+            <!-- Nasa App -->
+            <div class="col-sm-6">
+              <div class="card max-width-4">
+                <a
+                  data-toggle="collapse"
+                  href="#nasaApp"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="#nasaApp"
+                >
+                  <img
+                    src="../assets/images/nasa.jpg"
+                    class="card-img-top"
+                    alt="house1"
+                  />
+                </a>
+                <div class="collapse" id="nasaApp">
+                  <div class="card-body">
+                    <h5 class="card-title">NASA APP</h5>
+                    <p class="card-text">
+                      Webpack ✔️ <br />
+                      PWA ✔️ <br />
+                      LazyLoad ✔️ <br />
+                      Fetch API (pollyfilled for IOS) ✔️
+                    </p>
+                    <a href="/nasa/index.html"><p class="text-left">Demo</p></a>
+                    <a href="https://github.com/sarpisik/nasa-spa">
+                      <p class="text-left">Github</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rock Paper Scissors -->
+            <div class="col-sm-6">
+              <div class="card max-width-4">
+                <a
+                  data-toggle="collapse"
+                  href="#rockPaperScissors"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="#rockPaperScissors"
+                >
+                  <img
+                    src="../assets/images/nasa.jpg"
+                    class="card-img-top"
+                    alt="house1"
+                  />
+                </a>
+                <div class="collapse" id="rockPaperScissors">
+                  <div class="card-body">
+                    <h5 class="card-title">Rock Paper Scissors</h5>
+                    <p class="card-text">
+                      A simple rock-paper-scissors game <br />
+                      Responsive ✔️
+                    </p>
+                    <a href="https://sarpisik.github.io/rock-paper-scissors/"
+                      ><p class="text-left">Demo</p></a
+                    >
+                    <a href="https://github.com/sarpisik/rock-paper-scissors">
+                      <p class="text-left">Github</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sketch Book -->
+            <div class="col-sm-6">
+              <div class="card max-width-4">
+                <a
+                  data-toggle="collapse"
+                  href="#sketchBook"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="#sketchBook"
+                >
+                  <img
+                    src="../assets/images/nasa.jpg"
+                    class="card-img-top"
+                    alt="house1"
+                  />
+                </a>
+                <div class="collapse" id="sketchBook">
+                  <div class="card-body">
+                    <h5 class="card-title">Sketch Book</h5>
+                    <p class="card-text">
+                      Browser version of a Sketch book. <br />
+                      Object Oriented Programming ✔️ <br />
+                      Responsive ✔️
+                    </p>
+                    <a href="https://sarpisik.github.io/etch-a-sketch/"
+                      ><p class="text-left">Demo</p></a
+                    >
+                    <a href="https://github.com/sarpisik/etch-a-sketch">
+                      <p class="text-left">Github</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Calculator -->
+            <div class="col-sm-6">
+              <div class="card max-width-4">
+                <a
+                  data-toggle="collapse"
+                  href="#calculator"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="#calculator"
+                >
+                  <img
+                    src="../assets/images/nasa.jpg"
+                    class="card-img-top"
+                    alt="house1"
+                  />
+                </a>
+                <div class="collapse" id="calculator">
+                  <div class="card-body">
+                    <h5 class="card-title">Calculator</h5>
+                    <p class="card-text">
+                      A basic calculator application <br />
+                      Object Oriented Programming ✔️ <br />
+                      Responsive ✔️
+                    </p>
+                    <a href="https://sarpisik.github.io/calculator/"
+                      ><p class="text-left">Demo</p></a
+                    >
+                    <a href="https://github.com/sarpisik/calculator">
+                      <p class="text-left">Github</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- React Project -->
+          <div class="row justify-content-center">
+            <div class="col-sm-12"><h2>React</h2></div>
+
+            <!-- Soccer Club -->
+            <div class="col-sm-6">
+              <div class="card max-width-4">
+                <a
+                  data-toggle="collapse"
+                  href="#soccerClub"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="#soccerClub"
+                >
+                  <img
+                    src="../assets/images/soccer-club.jpg"
+                    alt="soccer-club project"
+                    class="card-img-top"
+                  />
+                </a>
+                <div class="collapse" id="soccerClub">
+                  <div class="card-body">
+                    <h5 class="card-title">Soccer Club Web Application</h5>
+                    <p class="card-text">
+                      Create React App ✔️ <br />
+                      React Router ✔️ <br />
+                      React Bootstrap ✔️ <br />
+                      Sass ✔️ <br />
+                      PWA ✔️ <br />
+                      LazyLoad ✔️ <br />
+                      Responsive ✔️
+                    </p>
+                    <a href="/soccer-club"><p class="text-left">Live</p></a>
+                    <a href="https://github.com/sarpisik/soccer-club-spa">
+                      <p class="text-left">Github</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- React Native Project -->
+          <div class="row justify-content-center">
+            <div class="col-sm-12"><h2>React Native</h2></div>
+
+            <!-- Todo App -->
+            <div class="col-sm-6">
+              <div class="card max-width-4">
+                <a
+                  data-toggle="collapse"
+                  href="#todoApp"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="#todoApp"
+                >
+                  <div class="d-f">
+                    <img
+                      src="../assets/images/todoapp.jpg"
+                      alt="todo-app project"
+                      class="card-img-top w-50"
+                    />
+                    <img
+                      src="../assets/images/todoapp2.jpg"
+                      alt="todo-app project"
+                      class="card-img-top w-50 float-right"
+                    />
+                  </div>
+                </a>
+                <div class="collapse" id="todoApp">
+                  <div class="card-body">
+                    <h5 class="card-title">Todo App (Android)</h5>
+                    <p class="card-text">
+                      Expo CLI ✔️ <br />
+                      React Redux ✔️ <br />
+                      Redux Persist ✔️ <br />
+                      React Navigation ✔️ <br />
+                      React Native Elements UI ✔️ <br />
+                      Dynamic Theme Switch ✔️
+                    </p>
+                    <blockquote>
+                      <i
+                        >Note: Because of I'm using android device currently, it
+                        may not work properly on IOS devices.</i
+                      >
+                    </blockquote>
+                    <a href="https://expo.io/@sarpisik/todoapp">
+                      <p class="text-left">Demo</p>
+                    </a>
+                    <a href="https://github.com/sarpisik/ReactNative-TodoApp">
+                      <p class="text-left">Github</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Contact -->
+      <footer class="row my-5 text-center">
+        <div class="col-sm-12 justify-content-center">
+          <div">
+            <a href="" class="link">Hire me!</a>
+          </div>
+          <div">
+            <i class="fab fa-github-square"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fas fa-envelope-square"></i>
+          </div>
         </div>
-      </div>
-    </main>
-    <footer class="container-fluid text-center">
-      <div class="row justify-content-center">
-        <div class="col-sm-12">
-          <a href="" class="link">Hire me!</a>
-        </div>
-        <div class="col-sm-12">
-          <i class="fab fa-github-square"></i>
-          <i class="fab fa-linkedin"></i>
-          <i class="fas fa-envelope-square"></i>
-        </div>
-      </div>
-    </footer>
+      </footer>
     </div>
   </body>
 </html>

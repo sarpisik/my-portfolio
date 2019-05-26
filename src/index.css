@@ -47,7 +47,6 @@ div.intro-loader::after {
 
 body {
   font-family: 'Ubuntu';
-  overflow: hidden;
 }
 
 body.show-projects {
@@ -79,13 +78,51 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   background: #72edf2;
-  background: -moz-linear-gradient(top, #72edf2 0%, #5400ff 100%);
+  background: -moz-linear-gradient(
+    top,
+    rgb(114, 237, 242) 0%,
+    rgb(84, 0, 255) 100%
+  );
   background: -webkit-linear-gradient(top, #72edf2 0%, #5400ff 100%);
   background: linear-gradient(to bottom, #72edf2 0%, #5400ff 100%);
 }
 
+.content {
+  max-width: 900px;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 15px 5px #000;
+}
+
 .photo {
-  height: 50vmin;
-  max-width: 100%;
-  max-height: 200px;
+  width: 250px;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 5px 5px #000;
+}
+
+.f-t-d-text-color {
+  color: #5400ff;
+}
+
+.text-color {
+  color: #2c0085;
+}
+
+.max-width-4 {
+  max-width: 400px;
+  margin: auto;
+}
+
+.t-white {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+@media only screen and (min-width: 576px) {
+  .project-vanilla .col-sm-6:nth-child(even) .max-width-4 {
+    margin-left: auto;
+    margin-right: initial;
+  }
+
+  .project-vanilla .col-sm-6:nth-child(odd) .max-width-4 {
+    margin-left: initial;
+    margin-right: auto;
+  }
 }
