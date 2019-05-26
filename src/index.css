@@ -87,14 +87,23 @@ body {
   background: linear-gradient(to bottom, #72edf2 0%, #5400ff 100%);
 }
 
+header {
+  margin-top: 8vmin;
+}
+
 .content {
   max-width: 900px;
   border-radius: 2rem;
   box-shadow: 0px 0px 15px 5px #000;
 }
 
+header,
+.content {
+  margin-bottom: 8vmin;
+}
+
 .photo {
-  width: 250px;
+  width: 200px;
   border-radius: 2rem;
   box-shadow: 0px 0px 5px 5px #000;
 }
@@ -115,13 +124,12 @@ body {
 .t-white {
   background-color: rgba(255, 255, 255, 0.6);
 }
-a[data-toggle='collapse'],
-a[data-toggle='collapse']:hover,
-a[data-toggle='collapse']:hover *,
-a[data-toggle='collapse']:focus {
+.clear-link-style,
+.clear-link-style:hover,
+.clear-link-style:hover *,
+.clear-link-style:focus {
   outline: none;
   text-decoration: none;
-  color: #2c0085;
   cursor: pointer;
 }
 @media only screen and (min-width: 576px) {

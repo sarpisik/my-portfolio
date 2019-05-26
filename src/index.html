@@ -53,13 +53,13 @@
     ></div>
 
     <!-- Photo & Logo -->
-    <header class="container-fluid my-5">
+    <header class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-sm-4">
           <div class="photo-container">
             <img
               src="../assets/images/sarp_isik_light_logo.png"
-              class="d-block mx-auto photo bg-dark"
+              class="d-block mx-auto photo bg-dark p-1"
               alt="sarp_isik"
             />
           </div>
@@ -85,10 +85,11 @@
 
         <!-- Projects -->
         <section
-          class="col-sm-12 card bg-transparent py-3 text-center rounded-0"
+          class="col-sm-12 card bg-transparent py-2 text-center rounded-0"
         >
           <a
             data-toggle="collapse"
+            class="clear-link-style text-color"
             href="#projects"
             role="button"
             aria-expanded="false"
@@ -107,6 +108,7 @@
                 <div class="card bg-transparent rounded-0 border-0 max-width-4">
                   <a
                     data-toggle="collapse"
+                    class="clear-link-style text-color"
                     href="#nasaApp"
                     role="button"
                     aria-expanded="false"
@@ -144,6 +146,7 @@
                 <div class="card bg-transparent rounded-0 border-0 max-width-4">
                   <a
                     data-toggle="collapse"
+                    class="clear-link-style text-color"
                     href="#rockPaperScissors"
                     role="button"
                     aria-expanded="false"
@@ -181,6 +184,7 @@
                 <div class="card bg-transparent rounded-0 border-0 max-width-4">
                   <a
                     data-toggle="collapse"
+                    class="clear-link-style text-color"
                     href="#sketchBook"
                     role="button"
                     aria-expanded="false"
@@ -217,6 +221,7 @@
                 <div class="card bg-transparent rounded-0 border-0 max-width-4">
                   <a
                     data-toggle="collapse"
+                    class="clear-link-style text-color"
                     href="#calculator"
                     role="button"
                     aria-expanded="false"
@@ -260,6 +265,7 @@
                 <div class="card bg-transparent rounded-0 border-0 max-width-4">
                   <a
                     data-toggle="collapse"
+                    class="clear-link-style text-color"
                     href="#soccerClub"
                     role="button"
                     aria-expanded="false"
@@ -307,6 +313,7 @@
                 <div class="card bg-transparent rounded-0 border-0 max-width-4">
                   <a
                     data-toggle="collapse"
+                    class="clear-link-style text-color"
                     href="#todoApp"
                     role="button"
                     aria-expanded="false"
@@ -361,12 +368,13 @@
       </main>
 
       <!-- Contact -->
-      <footer class="row mb-5 text-center">
+      <footer class="row text-center">
         <div
-          class="col-sm-12 card bg-transparent py-3 justify-content-center rounded-0"
+          class="col-sm-12 card bg-transparent py-2 justify-content-center  rounded-0 border-0"
         >
           <a
             data-toggle="collapse"
+            class="clear-link-style"
             href="#hireMe"
             role="button"
             aria-expanded="false"
@@ -374,9 +382,24 @@
             ><h2 class="text-color font-weight-bold">Hire me!</h2></a
           >
           <div class="collapse" id="hireMe">
-            <i class="fab fa-github-square"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fas fa-envelope-square"></i>
+            <a
+              href="https://github.com/sarpisik"
+              class="clear-link-style text-dark"
+            >
+              <i class="fab fa-github-square fa-3x"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/sarp-işik-a29aa6166/"
+              class="clear-link-style text-dark"
+            >
+              <i class="fab fa-linkedin fa-3x mx-3"></i>
+            </a>
+            <a
+              href="mailto:contact@sarpisik.com"
+              class="clear-link-style text-dark"
+            >
+              <i class="fas fa-envelope-square fa-3x"></i>
+            </a>
           </div>
         </div>
       </footer>
