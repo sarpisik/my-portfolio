@@ -25,6 +25,7 @@
   "homepage": "https://github.com/sarpisik/my-portfolio#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "devicon": "^2.2.0",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
     "popper.js": "^1.15.0"

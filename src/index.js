@@ -3,7 +3,9 @@
 // Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
-// Icons
+// Skills Icons
+import 'devicon/devicon.min.css';
+// Social Icons
 import '@fortawesome/fontawesome-free/js/fontawesome';
 import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/regular';
@@ -39,15 +41,6 @@ window.addEventListener('load', () => {
     window.alert(
       'Looks like you are visiting my portfolio web app offline. Feel free to take a look and please visit back when you are online also, to catch some updates. Thanks!'
     );
-
-  // Portfolio box in intro.
-  const portfolioLink = document.querySelector('.projects');
-
-  // Left arrow navigator on nav bar in portfolio section
-  const leftArrow = document.querySelector('.arrow-left');
-
-  // Click event on links
-  // onNavigate({ right: portfolioLink, left: leftArrow });
 
   const loading = document.querySelector('.intro-loader');
   const body = document.body;
