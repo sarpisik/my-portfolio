@@ -18,6 +18,8 @@ A basic media search & filter application.
 
 #### Rock Paper Scissors
 
+![alt text](https://github.com/sarpisik/my-portfolio/blob/master/assets/images/rock_paper_scissors.png 'Nasa Media Search App')
+
 A simple rock-paper-scissors game.
 
 [Demo](https://sarpisik.github.io/rock-paper-scissors/)\
@@ -25,12 +27,16 @@ A simple rock-paper-scissors game.
 
 #### Sketch Book
 
+![alt text](https://github.com/sarpisik/my-portfolio/blob/master/assets/images/sketch_book.png 'Nasa Media Search App')
+
 Browser version of a Sketch book.
 
 [Demo](https://sarpisik.github.io/etch-a-sketch/)\
 [Repo](https://github.com/sarpisik/etch-a-sketch)
 
 #### Calculator
+
+![alt text](https://github.com/sarpisik/my-portfolio/blob/master/assets/images/calculator.png 'Nasa Media Search App')
 
 Simple calculator application for basic math calculations.
 
@@ -41,6 +47,8 @@ Simple calculator application for basic math calculations.
 
 #### Soccer Club Single-Page Application
 
+![alt text](https://github.com/sarpisik/my-portfolio/blob/master/assets/images/soccer_club.png 'Nasa Media Search App')
+
 A react application built on create-react-app. It shows the schedule, news, gallery and more information about the football club. Assuming all these information as JSON data and sharing between components via [React Context API](https://reactjs.org/docs/context.html) and [React-Router location state](https://reacttraining.com/react-router/web/api/location).
 
 [Demo](https://sarpisik.com/soccer-club/)\
@@ -49,6 +57,10 @@ A react application built on create-react-app. It shows the schedule, news, gall
 ### React Native
 
 #### Todo App
+
+![alt text](https://github.com/sarpisik/my-portfolio/blob/master/assets/images/todoapp.jpg 'Nasa Media Search App')
+
+![alt text](https://github.com/sarpisik/my-portfolio/blob/master/assets/images/todoapp2.jpg 'Nasa Media Search App')
 
 ReactNative-Redux Todo App (Android devices only). My first react native app built on [Expo CLI](https://docs.expo.io/versions/latest/). I am using an Android device currently so it may not work properly on IOS devices. The state management handled by [React-Redux](https://redux.js.org/basics/usage-with-react) and persisting data by [Redux-Persist](https://github.com/rt2zz/redux-persist). It also dynamically changes the color of theme by same management.
 
