@@ -58,11 +58,8 @@ A react application built on create-react-app. It shows the schedule, news, gall
 
 #### Todo App
 
-<img src="https://github.com/sarpisik/my-portfolio/blob/master/assets/images/todoapp.jpg" width="500">
-![alt text](https://github.com/sarpisik/my-portfolio/blob/master/assets/images/todoapp.jpg 'TodoApp')
-<img src="https://github.com/sarpisik/my-portfolio/blob/master/assets/images/todoapp2.jpg" width="50%">
-
-![alt text](https://github.com/sarpisik/my-portfolio/blob/master/assets/images/todoapp2.jpg 'TodoApp')
+<img src="https://github.com/sarpisik/my-portfolio/blob/master/assets/images/todoapp.jpg" width="49%">
+<img src="https://github.com/sarpisik/my-portfolio/blob/master/assets/images/todoapp2.jpg" width="49%%">
 
 ReactNative-Redux Todo App (Android devices only). My first react native app built on [Expo CLI](https://docs.expo.io/versions/latest/). I am using an Android device currently so it may not work properly on IOS devices. The state management handled by [React-Redux](https://redux.js.org/basics/usage-with-react) and persisting data by [Redux-Persist](https://github.com/rt2zz/redux-persist). It also dynamically changes the color of theme by same management.
 
