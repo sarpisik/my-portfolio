@@ -106,7 +106,7 @@ header,
 }
 
 .logo {
-  width: 2em;
+  width: 3em;
   border-radius: 0.5rem;
   box-shadow: 0px 0px 5px 5px #000;
 }
@@ -142,7 +142,7 @@ header,
 @media only screen and (min-width: 425px) {
   /* Bigger header logos */
   .logo {
-    width: 3em;
+    width: 4em;
   }
   .fa-2x {
     font-size: 3em;
@@ -151,7 +151,7 @@ header,
 @media only screen and (min-width: 576px) {
   /* Bigger header logos */
   .logo {
-    width: 4em;
+    width: 5em;
   }
   .fa-2x {
     font-size: 4em;
