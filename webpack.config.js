@@ -103,6 +103,10 @@ module.exports = (env, argv) => {
       new CopyPlugin([
         { from: './assets/favicon', to: 'favicon/' },
         { from: './assets/projects/nasa', to: 'nasa/' },
+        {
+          from: './assets/projects/rock-paper-scissors',
+          to: 'rock-paper-scissors/'
+        },
         { from: './assets/projects/soccer-club', to: 'soccer-club/' }
       ])
     ]
