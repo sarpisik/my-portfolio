@@ -23,7 +23,7 @@ A basic media search & filter application.
 A simple rock-paper-scissors game.
 
 [Demo](https://sarpisik.github.io/rock-paper-scissors/)\
-[Repo](https://github.com/sarpisik/rock-paper-scissors)
+[Repo](https://www.sarpisik.com/rock-paper-scissors/)
 
 #### Sketch Book
 
