@@ -1,7 +1,10 @@
-const express = require('express');
-const app = express();
-const port = 3001;
+const express = require('express'),
+  bodyParser = require('body-parser'),
+  path = require('path'),
+  app = express(),
+  port = 3001;
 
+app.use(bodyParser.json());
 // Serve the static files from the React app
 app.use(express.static('dist'));
 
