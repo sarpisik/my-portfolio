@@ -9,3 +9,6 @@
 
 # credentials
 .env
+
+# records
+/logs
