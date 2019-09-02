@@ -1,9 +1,6 @@
 # dependencies
 /node_modules
 
-# production
-/assets/projects
-
 # credentials
 .env
 
