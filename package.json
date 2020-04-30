@@ -28,7 +28,7 @@
     "bootstrap": "^4.3.1",
     "devicon": "^2.2.0",
     "express": "^4.17.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "normalize.css": "^8.0.1",
     "popper.js": "^1.15.0",
     "simple-node-logger": "^18.12.23"
